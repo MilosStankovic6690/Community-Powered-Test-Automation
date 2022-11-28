@@ -23,6 +23,7 @@ namespace Community_Powered_Test_Automation.Pages
         public IWebElement Phone => driver.FindElement(By.Id("phone"));
         public IWebElement SaveButton => driver.FindElement(By.Id("save"));
         public IWebElement LogoutButton => driver.FindElement(By.Id("logout"));
+        public IWebElement SaveText => driver.FindElement(By.ClassName("tp-saved"));
 
     }
 }
