@@ -32,7 +32,9 @@ namespace Community_Powered_Test_Automation
             _testProjectExamplePage.Email.SendKeys("mail@mail.com");
             _testProjectExamplePage.Phone.SendKeys("325852");
             _testProjectExamplePage.SaveButton.Click();
-            _testProjectExamplePage.LogoutButton.Click();   
+
+
+            Assert.That("Saved", Is.EqualTo(_testProjectExamplePage.SaveText.Text));
 
             
             
